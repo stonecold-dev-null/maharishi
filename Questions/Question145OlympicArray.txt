@@ -1,0 +1,32 @@
+An Olympic Array is defined to be an array in which every value is greater than or equal to the sum of the values less than it. The sum of the values less than the minimum value in the arry is defined to be 0.
+
+For example, {3,2,1} is an Olympic array becuase
+ a. 1 is the minimum value and by definition the sum of the values less than it is 0. Since 1 is greater than 0, it satisfies the condition.
+ b. There is only one value less than 2 and 2 is greater than it, so the value 2 statisfies the condition.
+ c. The values 1 nd 2 are less that 3 and 3 is equal to their sum, so the value 3 statisfies the condition.
+
+Hence all the elements of the array staisfy the conditions and the array is an Olympic array.
+
+{2,2,1,1} is also an Olympic array because the values less than 2 sum to 2.
+
+{1,1000,100,10000,2} is also an Oympic array.
+
+however, {1,99,99,1000,100,10000,2} is not an Olympic array because the sum of the numbers less than 100 {99+99+1) is greater than 100. 
+Please be sure that your function detects that this is not an Olympic array.
+
+{1,2,1,3,2} is not an Olympic array because 3 is not greater than or equal to 1+2+1+2.
+
+{1,2,-1,2,2} is not an Olympic array because -1 is the minimum value but it is ntogreater than or equal to 0.
+
+Write a function named isOlympic that regturns 1 if its array argument is an Olympic array otherwise it returns 0.
+
+If you are writing in Java or C#, the funciton signature is
+  int isOlympic (int[] a)
+
+If you are writing in C or C++, the function signature is 
+  int isOlympic (int[] a, int len) where len is the number of elements in the array.
+
+Hint : use a nested loop.
+
+
+  

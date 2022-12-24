@@ -1,0 +1,28 @@
+Define the weighted sum of an array to be 2 * the sum of the even valued elements + 3 * the sum of the odd valued elements.
+
+Write a method named computeWeightedSum that computes the weighted sum of its argument
+
+if you are programming in Java or C#, the function signature is
+int computeWeightedSum(int[] a)
+
+You may assume that the input parameter is not null and that it contains at least one element.
+
+You method must make only one pass through the arry, i.e, there must be only one loop in your method!
+
+Examples,
+
+|-----------|---------------------|------------------------------|
+|a is       |then function returns|reason                        |
+|-----------|---------------------|------------------------------|
+|{1,2,3,4,5}| 39                  | 2 * (2+4) + 3 * (1+3+5) = 39 |
+|-----------|---------------------|------------------------------|
+|{1,3,5}    | 27                  |             3 * (1+3+5) = 27 |
+|-----------|---------------------|------------------------------|
+|{2,4,6}    | 24                  | 2 * (2+4+6) = 24             |
+|-----------|---------------------|------------------------------|
+|{1}        |  3                  | 3 * (1) = 3                  |
+|-----------|---------------------|------------------------------|
+|{2}        |  4                  | 2 * (2) = 4                  |
+|-----------|---------------------|------------------------------|
+|{0,0,0,0}  |  0                  | 2 * (0+0+0+0+0) = 0          |
+|-----------|---------------------|------------------------------|
